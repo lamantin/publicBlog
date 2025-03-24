@@ -2,7 +2,7 @@
 namespace App\Core;
 
 use Smarty;
-
+use App\Core\Csrf;
 class Controller
 {
     protected $db;
@@ -25,5 +25,10 @@ class Controller
             $this->view->assign('user_id', $_SESSION['user_id']);
 
         }
+
+
+        $csrfToken = Csrf::generateToken();
+        $this->view->assign('csrf_token', $csrfToken);
+
     }
 }

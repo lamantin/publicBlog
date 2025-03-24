@@ -1,6 +1,7 @@
 <h2>Poszt szerkesztése</h2>
 
 <form action="/user/editPost/{$post.id}" method="POST">
+    <input type="hidden" name="csrf_token" value="{$csrf_token}">
     <div>
         <label for="title">Cím:</label><br>
         <input type="text" id="title" name="title" value="{$post.title|escape}" required>

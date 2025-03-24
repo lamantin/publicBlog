@@ -18,6 +18,7 @@
     <h2>Felhasználó létrehozása</h2>
 
     <form method="POST" action="">
+        <input type="hidden" name="csrf_token" value="{$csrf_token}">
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" class="form-control" required>

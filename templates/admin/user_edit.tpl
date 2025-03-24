@@ -4,6 +4,7 @@
     <h2>Felhasználó szerkesztése: {$user.email}</h2>
 
     <form action="/admin/edituser/{$user.id}" method="POST">
+        <input type="hidden" name="csrf_token" value="{$csrf_token}">
         <div class="form-group">
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" value="{$user.email}" required>

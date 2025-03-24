@@ -8,6 +8,7 @@
 {/if}
 
 <form action="/login/register" method="POST">
+    <input type="hidden" name="csrf_token" value="{$csrf_token}">
     <div>
         <label class="form-label" for="email">E-mail cím:</label><br>
         <input class="form-control" type="email" id="email" name="email" required>

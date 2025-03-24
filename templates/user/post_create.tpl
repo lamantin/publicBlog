@@ -3,6 +3,7 @@
 <h2>Új poszt létrehozása</h2>
 
 <form action="/post/create" method="POST">
+    <input type="hidden" name="csrf_token" value="{$csrf_token}">
     <div>
         <label class="form-label" for="title">Cím:</label><br>
         <input class="form-control" type="text" id="title" name="title" required>

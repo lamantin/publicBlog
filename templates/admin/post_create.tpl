@@ -6,6 +6,7 @@
 
         <!-- Form a post létrehozásához -->
         <form action="/admin/posts_create" method="POST">
+            <input type="hidden" name="csrf_token" value="{$csrf_token}">
             <div class="mb-3">
                 <label for="title" class="form-label">Cím</label>
                 <input type="text" class="form-control" id="title" name="title" required>

@@ -10,8 +10,8 @@ Test task
 
 - import to mysql the sql dump from sql folder
 - setup the mysql connection in config/config.php 
-- php -S localhost:8000 -t public /futtassuk a szervert 
+- php -S localhost:8000 -t public / running the server
 
-Ezek után a http://localhost:8000 oldalon megtalálható a blog
+Open http://localhost:8000  the blog
 
 
